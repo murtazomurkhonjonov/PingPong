@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PingPong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="image">
+            <img src="https://media.istockphoto.com/photos/table-tennis-picture-id995391566?k=20&m=995391566&s=612x612&w=0&h=CuJdArlLBnylhvwaGfqptP1-avnyz0rOlXCaOqxmRRc=" alt="PingPong image" class="img-tns" width="350px" height="200px">
+        </div>
+    <h1 class="ping-text">PingPong ScoreKepper</h1>
+    <div class="scores">
+        <span id="score-one">0</span>
+        <span id="to-text">to</span>
+        <span id="score-two">0</span>
+    </div>
+    <div class="selector">
+        <select name="select-finish" id="select-finish" onchange="clearClick()">
+        <option value="4">4</option>
+        <option value="6" >6</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+    </select>
+</div>
+    <div class="buttons">
+        <div class="players">
+            <h1 class="player-one" onclick="clickeOne()">+Player1</h1>
+            <h1 class="player-two" onclick="clickeTwo()">+Player2</h1>
+        </div>
+    <h1 id="rest-button" onclick="clearClick()">rest</h1>
+   </div>
+    <div class="links">
+        <a href="#" class="telegram">telegram</a>
+        <a href="#" class="instagram">instagram</a>
+</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
